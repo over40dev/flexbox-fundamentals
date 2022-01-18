@@ -12,23 +12,23 @@ body {
 
 .flex-container-row {
   display: flex;
+  background: #000;
+
   /* Main Axis - alignment options */
   /* center | start | end | space-around | space-between */
   justify-content: center;
 
+  min-height: 400px; /* add height to demonstrate vertical alignment */
+
   /* Cross Axis - alignment options */
-  height: 400px; /* add height to demonstrate vertical alignment */
+  /* center | start | end | stretch | auto */
   align-items: center;
-  /* align-items: flex-start;
-  align-items: flex-end;
-  align-items:stretch; */
-  background: #000;
 }
 
 .item-row {
   width: 100px;
-  padding: 100px;
-  background: #254de4;
+  min-height: 100px;
+  background: blue;
   color: white;
   margin: 10px;
   font-size: 48px;
@@ -42,7 +42,7 @@ body {
 
 .item-row:nth-of-type(2) {
   /* align individual flex item */
-  align-self: stretch;
+  align-self:stretch
 }
 
 .item-row:nth-of-type(3) {
@@ -50,4 +50,26 @@ body {
 }
 
 /* Demonstrate Flexbox - Main Axis = Column */
+.flex-container-column {
+  background: #000;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column; /* column-reverse */
 
+  /* Main Axis - alignment options */
+  /* center | start | end | space-around | space-between */
+  justify-content: center;
+
+  /* Cross Axis - alignment options */
+  /* center | start | end | stretch | auto */
+  align-items: center;
+}
+
+.item-col {
+  width: 100px;
+  min-height: 100px;
+  font-size: 48px;
+  background: blue;
+  color: white;
+  margin: 10px;
+}
