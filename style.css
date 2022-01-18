@@ -5,7 +5,7 @@
 }
 
 body {
-font-family: serif;
+  font-family: serif;
 }
 
 .flex-container {
@@ -33,7 +33,19 @@ font-family: serif;
   color: white;
   margin: 10px;
   font-size: 48px;
-
 }
 
+.item:nth-of-type(1) {
+  /* align individual flex item */
+  align-self: start;
+  /* align-self: center; */
+}
 
+.item:nth-of-type(2) {
+  /* align individual flex item */
+  align-self: stretch;
+}
+
+.item:nth-of-type(3) {
+  align-self: end;
+}
