@@ -42,7 +42,7 @@ body {
 
 .item-row:nth-of-type(2) {
   /* align individual flex item */
-  align-self:stretch
+  align-self: stretch;
 }
 
 .item-row:nth-of-type(3) {
@@ -72,4 +72,23 @@ body {
   background: blue;
   color: white;
   margin: 10px;
+}
+
+/* Centering Elements */
+.item-row,
+.item-col {
+  /* the text is now the flex-item */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-col:nth-of-type(1) {
+  justify-content: start;
+  align-items: start;
+}
+
+.item-col:nth-of-type(3) {
+  justify-content: end;
+  align-items: end;
 }
