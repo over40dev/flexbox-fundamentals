@@ -8,14 +8,13 @@ body {
   font-family: serif;
 }
 
-.flex-container {
+/* Demonstrate Flexbox - Main Axis = Row */
+
+.flex-container-row {
   display: flex;
   /* Main Axis - alignment options */
+  /* center | start | end | space-around | space-between */
   justify-content: center;
-  /* justify-content: start;
-  justify-content: end;
-  justify-content: space-around;
-  justify-content: space-between; */
 
   /* Cross Axis - alignment options */
   height: 400px; /* add height to demonstrate vertical alignment */
@@ -26,7 +25,7 @@ body {
   background: #000;
 }
 
-.item {
+.item-row {
   width: 100px;
   padding: 100px;
   background: #254de4;
@@ -35,17 +34,20 @@ body {
   font-size: 48px;
 }
 
-.item:nth-of-type(1) {
+.item-row:nth-of-type(1) {
   /* align individual flex item */
+  /* center | start | end | stretch | auto */
   align-self: start;
-  /* align-self: center; */
 }
 
-.item:nth-of-type(2) {
+.item-row:nth-of-type(2) {
   /* align individual flex item */
   align-self: stretch;
 }
 
-.item:nth-of-type(3) {
+.item-row:nth-of-type(3) {
   align-self: end;
 }
+
+/* Demonstrate Flexbox - Main Axis = Column */
+
