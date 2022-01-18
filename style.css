@@ -9,23 +9,23 @@ font-family: serif;
 }
 
 .flex-container {
-  /* display: flex; */
+  display: flex;
+  /* Main Axis - alignment options */
+  justify-content: center;
+  /* justify-content: start;
+  justify-content: end;
+  justify-content: space-around;
+  justify-content: space-between; */
   background: #000;
 }
 
-.flex-container::after {
-  content: '';
-  clear: both;
-  display: block;
-}
-
 .item {
-  float: left;
   width: 100px;
   padding: 100px;
   background: #254de4;
   color: white;
   margin: 10px;
+  font-size: 48px;
 
 }
 
