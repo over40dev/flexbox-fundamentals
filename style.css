@@ -16,6 +16,13 @@ font-family: serif;
   justify-content: end;
   justify-content: space-around;
   justify-content: space-between; */
+
+  /* Cross Axis - alignment options */
+  height: 400px; /* add height to demonstrate vertical alignment */
+  align-items: center;
+  /* align-items: flex-start;
+  align-items: flex-end;
+  align-items:stretch; */
   background: #000;
 }
 
