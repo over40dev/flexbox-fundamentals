@@ -9,6 +9,15 @@ body {
   font-size: 48px;
 }
 
+main {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
 h1 {
   font-size: smaller;
 }
@@ -152,4 +161,44 @@ h1 {
 
 .item-order:nth-of-type(3) {
   order: 2;
+}
+
+/* Demonstrate Flexbox Order Property */
+.flex-container-prop {
+  background: #000;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-prop {
+  background: blue;
+  color: white;
+  margin: 10px;
+  flex-basis: 100px; /* starting width; same as setting width*/
+  flex-grow: 1; /* all grow at the same default rate as flex-basis*/
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-prop:nth-of-type(1) {
+  /* grows as space available relative to flex-basis (original width) */
+  flex-grow: 1;
+}
+
+.item-prop:nth-of-type(2) {
+  flex-basis: 200px;
+  flex-grow: 0; /* do not grow as space expands (default) */
+}
+
+.item-prop:nth-of-type(3) {
+  /* grows as space available relative to
+  flex-basis (original width)
+  flex-grow of 2 will grow twice as much
+  flex-grow of 3 will grow 3x as much and so on
+  */
+  flex-grow: 3;
 }
