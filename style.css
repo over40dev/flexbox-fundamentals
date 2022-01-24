@@ -6,6 +6,11 @@
 
 body {
   font-family: serif;
+  font-size: 48px;
+}
+
+h1 {
+  font-size: smaller;
 }
 
 /* Demonstrate Flexbox - Main Axis = Row */
@@ -31,7 +36,6 @@ body {
   background: blue;
   color: white;
   margin: 10px;
-  font-size: 48px;
 }
 
 .item-row:nth-of-type(1) {
@@ -68,7 +72,6 @@ body {
 .item-col {
   width: 100px;
   min-height: 100px;
-  font-size: 48px;
   background: blue;
   color: white;
   margin: 10px;
@@ -108,7 +111,6 @@ body {
 .item-wrap {
   width: 100px;
   min-height: 100px;
-  font-size: 48px;
   background: blue;
   color: white;
   margin: 10px;
@@ -116,4 +118,38 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Demonstrate Flexbox Order Property */
+.flex-container-order {
+  background: #000;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* wrap items */
+  flex-wrap: wrap;
+}
+
+.item-order {
+  background: blue;
+  color: white;
+  margin: 10px;
+  width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-order:nth-of-type(1) {
+  order: 3;
+}
+
+.item-order:nth-of-type(2) {
+  order: 1;
+}
+
+.item-order:nth-of-type(3) {
+  order: 2;
 }
