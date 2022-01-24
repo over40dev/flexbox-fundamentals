@@ -178,6 +178,7 @@ h1 {
   margin: 10px;
   flex-basis: 100px; /* starting width; same as setting width*/
   flex-grow: 1; /* all grow at the same default rate as flex-basis*/
+  flex-shrink: 1; /* all shrink at the same default rate as flex-basis*/
   min-height: 100px;
   display: flex;
   justify-content: center;
@@ -187,11 +188,13 @@ h1 {
 .item-prop:nth-of-type(1) {
   /* grows as space available relative to flex-basis (original width) */
   flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .item-prop:nth-of-type(2) {
   flex-basis: 200px;
   flex-grow: 0; /* do not grow as space expands (default) */
+  flex-shrink: 0; /* do not shrink as space gets smaller (default) */
 }
 
 .item-prop:nth-of-type(3) {
@@ -201,4 +204,5 @@ h1 {
   flex-grow of 3 will grow 3x as much and so on
   */
   flex-grow: 3;
+  flex-shrink: 3;
 }
